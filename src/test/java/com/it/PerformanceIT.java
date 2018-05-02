@@ -1,10 +1,7 @@
 package com.it;
 
 
-import com.fuzzygroup.SimpleEntity;
 import com.fuzzygroup.exceptions.DisplayException;
-import com.fuzzygroup.view2.ConsoleVisualisationEngine;
-import com.fuzzygroup.view2.Display;
 import org.junit.Test;
 
 import java.util.List;

@@ -1,10 +1,14 @@
 package com.it;
 
-import com.fuzzygroup.SimpleEntity;
-import com.fuzzygroup.view2.ThreeVector;
+//import com.fuzzygroup.SimpleEntity;
+//import com.fuzzygroup.view2.ThreeVector;
+import com.fuzzygroup.entities.SimpleEntity;
 import com.fuzzygroup.exceptions.DisplayException;
-import com.fuzzygroup.view2.ConsoleVisualisationEngine;
-import com.fuzzygroup.view2.Display;
+import com.fuzzygroup.view.Display;
+import com.fuzzygroup.view.ThreeVector;
+import com.fuzzygroup.view.lwjgl_engine.LwjglEngine;
+//import com.fuzzygroup.view2.ConsoleVisualisationEngine;
+//import com.fuzzygroup.view2.Display;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -28,7 +32,7 @@ public class VisualisationLifecycleUtility {
                         int objectAmount, int objectsUpdatesPerSecond, double maxAccelerationChange,
                         int newObjectsPerSecond, int deleteObjectsPerSecond) {
         display = new Display(displayName,
-                new ConsoleVisualisationEngine(), 800, 500);
+                new LwjglEngine(), 800, 500);
         display.setFps(fps);
 //        display.setCanvasRotation(Math.PI/4);
 //        display.setScale(2);

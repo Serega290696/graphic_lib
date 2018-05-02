@@ -1,9 +1,9 @@
 package com.unit.vectors;
 
-import com.fuzzygroup.view2.ThreeVector;
+import com.fuzzygroup.view.ThreeVector;
 import org.junit.Test;
 
-public class Direction {
+public class DirectionTest {
     @Test
     public void testDirection() {
         vector(new ThreeVector(1, 10, 0)); // top
