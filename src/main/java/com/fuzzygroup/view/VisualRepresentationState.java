@@ -61,16 +61,16 @@ public class VisualRepresentationState implements Serializable {
 
     static {
         Runnable schedulerRunnable = () -> {
-            int step = 10;
+            int fps = 1;
             while (true) {
-                long begin = System.nanoTime();
+                long beginIterationNano = System.nanoTime();
                 consumers.stream().filter(t -> Context.uptimeMillis() - t.lastExecution >= t.period)
                         .forEach(t -> {
                             t.lastExecution = Context.uptimeMillis();
                             t.action.accept(t.entity);
                         });
                 try {
-                    TimeUnit.MILLISECONDS.sleep(step - (System.nanoTime() - begin) / 1000_000);
+                    TimeUnit.MILLISECONDS.sleep(1000 / fps - (System.nanoTime() - beginIterationNano) / 1000_000);
                 } catch (InterruptedException e) {
                     break;
                 }

@@ -1,4 +1,4 @@
-package com.ngeneration;
+package com.ngeneration.ai;
 
 import com.ngeneration.custom_rendered_components.Car;
 import com.ngeneration.graphic.engine.physics.RenderedComponentStateUpdater;

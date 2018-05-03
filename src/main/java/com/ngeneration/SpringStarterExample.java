@@ -1,5 +1,7 @@
 package com.ngeneration;
 
+import com.ngeneration.graphic.engine.drawers.Console2DDrawer;
+import com.ngeneration.graphic.engine.drawers.Drawer;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -18,7 +20,7 @@ public class SpringStarterExample {
 
     public static void main(String[] args) {
         SpringApplication.run(SpringStarterExample.class, args);
-        new Game().start();
+        new Simulation().start();
     }
 
     @Bean

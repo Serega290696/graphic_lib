@@ -1,4 +1,4 @@
-package com.ngeneration.graphic.engine.view;
+package com.ngeneration.graphic.engine.drawablecomponents;
 
 import com.ngeneration.graphic.engine.Vector;
 

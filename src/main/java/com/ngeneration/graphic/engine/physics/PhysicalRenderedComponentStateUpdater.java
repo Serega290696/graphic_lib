@@ -1,6 +1,6 @@
 package com.ngeneration.graphic.engine.physics;
 
-import com.ngeneration.graphic.engine.view.PhysicalRenderedComponent;
+import com.ngeneration.graphic.engine.drawablecomponents.PhysicalRenderedComponent;
 
 public class PhysicalRenderedComponentStateUpdater
         implements RenderedComponentStateUpdater<PhysicalRenderedComponent> { //todo rename "Updater"
@@ -9,8 +9,9 @@ public class PhysicalRenderedComponentStateUpdater
 
     @Override
     public void accept(PhysicalRenderedComponent component) {
-        component.setSpeed(
-                component.getSpeed()
-                        .plus(component.getAcceleration().multiple(TIME_DELTA)));
+        component.setSpeed(component.getSpeed()
+                .plus(component.getAcceleration().multiple(TIME_DELTA)));
+        component.setPosition(component.getPosition()
+                .plus(component.getSpeed().multiple(TIME_DELTA)));
     }
 }

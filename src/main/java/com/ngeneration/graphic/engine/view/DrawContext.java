@@ -1,10 +1,8 @@
 package com.ngeneration.graphic.engine.view;
 
+import com.ngeneration.graphic.engine.drawablecomponents.RenderedComponent;
+
 import java.util.*;
-import java.util.function.Consumer;
-import java.util.function.Predicate;
-import java.util.function.UnaryOperator;
-import java.util.stream.Stream;
 
 public class DrawContext
 //        implements List<List<RenderedComponent>>//todo?

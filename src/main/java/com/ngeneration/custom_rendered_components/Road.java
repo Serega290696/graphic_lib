@@ -1,7 +1,7 @@
 package com.ngeneration.custom_rendered_components;
 
 import com.ngeneration.graphic.engine.Vector;
-import com.ngeneration.graphic.engine.view.RenderedComponent;
+import com.ngeneration.graphic.engine.drawablecomponents.RenderedComponent;
 
 import java.util.ArrayList;
 import java.util.HashSet;

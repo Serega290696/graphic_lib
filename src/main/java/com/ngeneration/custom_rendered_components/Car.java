@@ -2,9 +2,9 @@ package com.ngeneration.custom_rendered_components;
 
 import com.fuzzygroup.view.Shape;
 import com.fuzzygroup.view.enums.ColorEnum;
-import com.ngeneration.Driver;
+import com.ngeneration.ai.Driver;
 import com.ngeneration.graphic.engine.Vector;
-import com.ngeneration.graphic.engine.view.PhysicalRenderedComponent;
+import com.ngeneration.graphic.engine.drawablecomponents.PhysicalRenderedComponent;
 
 public class Car extends PhysicalRenderedComponent {
     private Driver driver;
@@ -22,13 +22,6 @@ public class Car extends PhysicalRenderedComponent {
         this.driver = builder.driver;
     }
 
-    public void setRotation(double radian) {
-        speed = new Vector.PolarCoordinateSystemVector(radian, speed.module()).toFlatCartesianVector();
-    }
-
-    public void setPosition(Vector position) {
-        this.position = position;
-    }
     public static class Builder {
         Vector position;
         Vector size;
