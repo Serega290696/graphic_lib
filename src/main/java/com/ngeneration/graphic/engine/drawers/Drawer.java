@@ -12,4 +12,12 @@ public abstract class Drawer {
     protected abstract void doRender(RenderedComponent component);
 
     protected abstract boolean isDrawable(RenderedComponent component);
+
+    protected void init() {
+
+    }
+
+    protected void prepareToNextFrame() {
+
+    }
 }

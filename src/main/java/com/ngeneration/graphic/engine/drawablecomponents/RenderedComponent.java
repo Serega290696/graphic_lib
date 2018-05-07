@@ -2,15 +2,22 @@ package com.ngeneration.graphic.engine.drawablecomponents;
 
 import com.fuzzygroup.view.Shape;
 import com.fuzzygroup.view.enums.ColorEnum;
+import com.ngeneration.graphic.engine.ComponentsScheduler;
+import com.ngeneration.graphic.engine.LazyLogger;
 import com.ngeneration.graphic.engine.Vector;
 import com.ngeneration.graphic.engine.drawers.Console1DDrawer;
 import com.ngeneration.graphic.engine.drawers.Drawer;
 import com.ngeneration.graphic.engine.view.DrawContext;
 
+import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
+import java.util.function.Supplier;
 
 public class RenderedComponent {
+    private static final LazyLogger logger = LazyLogger.getLogger(RenderedComponent.class);
+
     protected Vector position;
     protected Vector size;
     protected Shape shapes;
@@ -23,10 +30,32 @@ public class RenderedComponent {
 
     protected Drawer drawer = new Console1DDrawer();//todo: inject?
 
+    protected Supplier<Boolean> isComponentAlreadyNeed = () -> true; //TODO elaborate on
+    protected List<ComponentsScheduler> schedulers = new ArrayList<>();
+
     public void render() {
         if (visible) {
             drawer.render(this);
         }
+    }
+
+    public static <T> RenderedComponent map(T mappedEntity) {
+        logger.warn("behaviour doesn't implemented");
+//        TODO choose:
+//        throw new OperationNotSupportedException();
+//        return new RenderedComponent();
+//        return null;
+        return null;
+    }
+
+    public void onCreation() {
+        //TODO chain of responsibility + observer
+        // TODO add schedulers
+    }
+
+    public void destroy() {
+        contexts.forEach(c -> c.remove(this));
+        schedulers.forEach(s -> s.remove(this)); // TODO handle warning. Investigate here
     }
 
     /*
@@ -34,8 +63,25 @@ public class RenderedComponent {
         Investigate possibility of using this method only within package.
         Probably should use Jigsaw?
      */
-    public void addToContext(DrawContext context) {
+    public void registerContext(DrawContext context) {
         contexts.add(context);
+    }
+
+    public void unregisterFromContext(DrawContext context) {
+        contexts.remove(context);
+    }
+
+    /*
+        This method only for internal use.
+        Investigate possibility of using this method only within package.
+        Probably should use Jigsaw?
+     */
+    public void registerScheduler(ComponentsScheduler scheduler) {
+        schedulers.add(scheduler);
+    }
+
+    public void unregisterScheduler(ComponentsScheduler<? extends RenderedComponent> scheduler) {
+        schedulers.remove(scheduler);
     }
 
     public Vector getPosition() {
@@ -93,4 +139,5 @@ public class RenderedComponent {
     public void setOpacity(double opacity) {
         this.opacity = opacity;
     }
+
 }

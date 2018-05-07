@@ -1,5 +1,6 @@
 package com.ngeneration.graphic.engine.view;
 
+import com.ngeneration.graphic.engine.Corner;
 import com.ngeneration.graphic.engine.Vector;
 
 import java.util.ArrayList;
@@ -18,11 +19,18 @@ public class Window {
         this(new Vector(x, y));
     }
 
-    public void addArea(DrawArea area) {
+    public DrawArea allocateArea(Corner corner, double fractionX, double fractionY) {
+        RectDrawArea area = new RectDrawArea(this, corner, fractionX, fractionY);
         areas.add(area);
+        return area;
     }
 
     public Vector getSize() {
         return size;
+    }
+
+    public void close() {
+        areas.forEach(DrawArea::close);
+        areas.clear();
     }
 }

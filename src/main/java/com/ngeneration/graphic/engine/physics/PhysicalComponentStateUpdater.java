@@ -2,7 +2,7 @@ package com.ngeneration.graphic.engine.physics;
 
 import com.ngeneration.graphic.engine.drawablecomponents.PhysicalRenderedComponent;
 
-public class PhysicalRenderedComponentStateUpdater
+public class PhysicalComponentStateUpdater
         implements RenderedComponentStateUpdater<PhysicalRenderedComponent> { //todo rename "Updater"
 
     private final double TIME_DELTA = 1; //todo: probably should create map<Component, lastUpdate> ?

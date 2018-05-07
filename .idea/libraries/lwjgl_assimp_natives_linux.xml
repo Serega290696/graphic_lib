@@ -1,0 +1,64 @@
+<component name="libraryTable">
+  <library name="lwjgl-assimp-natives-linux">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/lwjgl-assimp-natives-linux.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/lwjgl-assimp.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/lwjgl-bgfx-natives-linux.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/lwjgl-bgfx.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/lwjgl-egl.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/lwjgl-glfw-natives-linux.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/lwjgl-glfw.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/lwjgl-jawt.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/lwjgl-jemalloc-natives-linux.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/lwjgl-jemalloc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/lwjgl-lmdb-natives-linux.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/lwjgl-lmdb.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/lwjgl-lz4-natives-linux.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/lwjgl-lz4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/lwjgl-nanovg-natives-linux.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/lwjgl-nanovg.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/lwjgl-natives-linux.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/lwjgl-nfd-natives-linux.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/lwjgl-nfd.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/lwjgl-nuklear-natives-linux.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/lwjgl-nuklear.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/lwjgl-odbc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/lwjgl-openal-natives-linux.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/lwjgl-openal.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/lwjgl-opencl.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/lwjgl-opengl-natives-linux.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/lwjgl-opengl.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/lwjgl-opengles-natives-linux.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/lwjgl-opengles.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/lwjgl-openvr-natives-linux.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/lwjgl-openvr.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/lwjgl-par-natives-linux.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/lwjgl-par.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/lwjgl-remotery-natives-linux.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/lwjgl-remotery.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/lwjgl-rpmalloc-natives-linux.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/lwjgl-rpmalloc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/lwjgl-sse-natives-linux.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/lwjgl-sse.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/lwjgl-stb-natives-linux.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/lwjgl-stb.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/lwjgl-tinyexr-natives-linux.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/lwjgl-tinyexr.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/lwjgl-tinyfd-natives-linux.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/lwjgl-tinyfd.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/lwjgl-tootle-natives-linux.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/lwjgl-tootle.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/lwjgl-vulkan.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/lwjgl-xxhash-natives-linux.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/lwjgl-xxhash.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/lwjgl-yoga-natives-linux.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/lwjgl-yoga.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/lwjgl-zstd-natives-linux.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/lwjgl-zstd.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/lwjgl.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/slick-util.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

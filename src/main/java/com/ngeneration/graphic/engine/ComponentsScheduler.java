@@ -61,11 +61,14 @@ public class ComponentsScheduler<T extends RenderedComponent> { // todo the same
         this.pause = false;
     }
 
-    public void add(T component) {
+    public synchronized void add(T component) {
+        // TODO should be lock here, next two actions should be simultaneously.
+        // For the sake of this reason track this method calling frequency
+        component.registerScheduler(this);
         components.add(component);
     }
 
-    public void remove(RenderedComponent component) {
+    public void remove(T component) {
         components.remove(component);
     }
 }

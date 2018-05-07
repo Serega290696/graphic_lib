@@ -16,7 +16,12 @@ public class ComponentsFactory {
                 .withDriver(new BrownianDriver());
     }
 
-    public static Road.Builder aVerticalRoadBound(double y, double x, double x2) {
+    public static Road.Builder aVerticalRoadBound(double x, double y, double y2) {
+        return new Road.Builder()
+                .firstBoundPoint(new Vector(x, y))
+                .nextBoundPoint(new Vector(x, y2));
+    }
+    public static Road.Builder aHorizontalRoadBound(double y, double x, double x2) {
         return new Road.Builder()
                 .firstBoundPoint(new Vector(x, y))
                 .nextBoundPoint(new Vector(x2, y));

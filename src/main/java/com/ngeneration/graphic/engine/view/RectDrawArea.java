@@ -7,13 +7,13 @@ public class RectDrawArea extends DrawArea {
     private Vector center;
     private Vector size;
 
-    public RectDrawArea(Window holderWindow, Vector center, Vector size) {
+    protected RectDrawArea(Window holderWindow, Vector center, Vector size) {
         super(holderWindow);
         this.size = size;
         this.center = center;
     }
 
-    public RectDrawArea(Window holderWindow, Corner corner, double fractionX, double fractionY) {
+    protected RectDrawArea(Window holderWindow, Corner corner, double fractionX, double fractionY) {
         super(holderWindow);
         this.size = new Vector(holderWindow.getSize().getX() * fractionX,
                 holderWindow.getSize().getY() * fractionY);

@@ -19,7 +19,7 @@ public class SpringStarterExample {
     private String secret;
 
     public static void main(String[] args) {
-        SpringApplication.run(SpringStarterExample.class, args);
+//        SpringApplication.run(SpringStarterExample.class, args);
         new Simulation().start();
     }
 

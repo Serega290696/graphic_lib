@@ -1,4 +1,4 @@
-package com.fuzzygroup.view.lwjgl_engine;
+package com.ngeneration.graphic.engine.lwjgl_engine;
 
 import com.fuzzygroup.view.*;
 import com.fuzzygroup.view.enums.ColorEnum;

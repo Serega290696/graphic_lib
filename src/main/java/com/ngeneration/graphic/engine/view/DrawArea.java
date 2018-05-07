@@ -5,7 +5,7 @@ import com.ngeneration.graphic.engine.Vector;
 import java.util.ArrayList;
 import java.util.List;
 
-public abstract class DrawArea {
+public abstract class DrawArea implements AutoCloseable {
 
     protected final List<DrawContext> contexts = new ArrayList<>();
     protected final Window holderWindow;
@@ -19,6 +19,9 @@ public abstract class DrawArea {
 
     public void addContext(DrawContext context) {
         contexts.add(context);
+    }
+
+    public void close() {
     }
 
 }
